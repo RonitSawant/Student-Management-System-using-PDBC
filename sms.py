@@ -172,7 +172,7 @@ def f5():
 	con = None
 	cursor = None
 	try:
-		con = cx_Oracle.connect("system/abc123")
+		con = cx_Oracle.connect("system/Password")
 		rno = (entaddrno.get())
 		name = (entaddname.get())
 		marks = (entaddmarks.get())
@@ -330,7 +330,7 @@ def f7():
 	con = None
 	cursor = None
 	try:
-		con = cx_Oracle.connect("system/abc123")
+		con = cx_Oracle.connect("system/Password")
 		rno = (entupdnmrno.get())
 		name = (entupdnmname.get())
 		
@@ -432,7 +432,7 @@ def f15():
 	con=None
 	cursor=None
 	try:
-		con = cx_Oracle.connect("system/abc123")
+		con = cx_Oracle.connect("system/Password")
 		rno = (entupdmrkrno.get())
 		marks = (entupdmrkmark.get())
 
@@ -526,7 +526,7 @@ def f9():
 	con = None
 	cursor = None
 	try:
-		con = cx_Oracle.connect("system/abc123")
+		con = cx_Oracle.connect("system/Password")
 		rno = (entRno.get())
 		
 		if len(rno) == 0:
