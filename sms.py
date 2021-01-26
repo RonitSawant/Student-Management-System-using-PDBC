@@ -21,7 +21,7 @@ def f3():
 	con = None
 	cursor = None
 	try:
-		con = cx_Oracle.connect("system/abc123")
+		con = cx_Oracle.connect("system/Password")
 		cursor = con.cursor()
 		sql = "select * from kstudent"
 		cursor.execute(sql)
@@ -57,7 +57,7 @@ def f18():
 	con=None	
 	cursor=None
 	try:
-		con = cx_Oracle.connect("system/abc123")
+		con = cx_Oracle.connect("system/Password")
 		cursor=con.cursor()
 		sql="select NAME from kstudent"
 		cursor.execute(sql)
@@ -139,7 +139,7 @@ try:
 		socket.create_connection(("www.google.com" , 80))
 		a1 = "http://api.openweathermap.org/data/2.5/weather?q=Mumbai"
 		a2 = "&units=metric"
-		a3 = "&appid=9af105d3624194eb620d94ae8a2ac47f"
+		a3 = "&appid=your app id from site"
 		api_address = a1 + a2 + a3 
 
 		res1 = requests.get(api_address)
